@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Merriweather Sans;
+}
+
+/* .bg {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./assets/images/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+.bg-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(8, 8, 25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  text-shadow: 2px 2px blue;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid rgb(8, 8, 25);
+  border-radius: 14px;
+  padding: 30px;
+  width: 540px;
+  /* height: 500px; need to change */
+  /* box-shadow: -10px -10px rgba(8, 8, 80); */
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container > input {
+  width: 250px;
+  height: 40px;
+  text-indent: 4px;
+  border-radius: 5px;
+  outline: none;
+  outline-color: rgb(8, 8, 25);
+  box-shadow: 4px 4px gray;
+}
+
+.input-container > button {
+  position: absolute;
+  background: none;
+  border: none;
+  left: 340px;
+  cursor: pointer;
+}
+
+.weatherStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherStatus > * {
+  margin-bottom: 10px;
+}
+
+.imgStatus {
+  width: 150px;
+  height: 150px;
+  border-radius: 14px;
+}
+
+.cityStatus {
+  font-size: 1.5rem;
+}
+
+.latlongStatus {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.latStatus,
+.longStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latStatus > *,
+.longStatus > * {
+  margin-bottom: 10px;
+}
+
+.humiditySpeedStatus {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  text-align: center;
+}
+
+.humidity,
+.wind-speed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h5 {
+  color: hsl(0, 0%, 50%);
+}
+
+.humidity > h5,
+.wind-speed > h5 {
+  margin-top: 10px;
+}
+
+.humidity-img,
+.wind-speed-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.notFound,
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
