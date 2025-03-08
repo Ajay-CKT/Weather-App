@@ -16,7 +16,7 @@ import Spinner from "./Spinner";
 import NotFound from "./NotFound";
 
 const App = () => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("Chennai");
   const [temp, setTemp] = useState(0);
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
@@ -50,7 +50,7 @@ const App = () => {
   }
 
   const searchCity = async () => {
-    let apiKey = "";
+    let apiKey = import.meta.env.VITE_apikey;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${text}&appid=${apiKey}&units=Metric`;
     try {
       setLoading(true);
